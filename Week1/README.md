@@ -4,6 +4,13 @@ Reinforcement Learning (RL) is a type of machine learning where an **agent** lea
 
 ---
 
+## Reinforcement Learning Process Diagram
+
+Below is a detailed diagram of the Reinforcement Learning (RL) process:
+
+![Reinforcement Learning Diagram](rl_diagram.png)  
+*Figure 1: Reinforcement Learning Process*
+
 ## Key Components of Reinforcement Learning
 
 ### 1. **Agent**
