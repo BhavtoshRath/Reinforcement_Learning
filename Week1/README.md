@@ -49,7 +49,7 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 5. This process repeats until the agent learns an optimal policy.
 
 
-![Reinforcement Learning steps](RL_steps.png)  
+![Reinforcement Learning steps](RL_steps.jpg)  
 *Figure 2: Reinforcement Learning steps*
 ---
 
