@@ -48,6 +48,9 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 4. The agent updates its policy to improve future decisions based on the reward received.
 5. This process repeats until the agent learns an optimal policy.
 
+
+![Reinforcement Learning steps](RL_steps.png)  
+*Figure 2: Reinforcement Learning steps*
 ---
 
 ## Key Concepts in RL
