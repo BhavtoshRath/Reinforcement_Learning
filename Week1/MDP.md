@@ -18,4 +18,20 @@ An MDP follows the **Markov Property**, which states that the future state depen
 ## Goal in Reinforcement Learning  
 The objective in RL is to learn an **optimal policy (π)** that maps states to actions, maximizing the **expected cumulative reward** over time.  
 
----  
+---
+
+# Interview Qs:
+
+- **What is a Markov Decision Process (MDP), and why is it important in reinforcement learning??**
+  - It is a *mathematical framework* for decision-making in environment with stochastic outcomes.
+  -  Important concepts: states (S), actions (A), transition probabilities (P), rewards (R), and a discount factor (γ).
+  - MDPs are crucial in RL because they provide a structured way to model an agent's interaction with an environment to learn an optimal policy.
+
+- **What is the Markov Property, and why is it important in MDPs?**
+   - The Markov Property states that the future state of a process depends only on the current state and action, not on the history of past states. 
+   - This assumption simplifies decision-making and enables efficient learning algorithms like Dynamic Programming, Q-Learning, and Policy Gradient Methods in RL.
+
+- **What is the difference between a deterministic and a stochastic policy in MDPs?**
+  - A deterministic policy selects the same action a for a given state s every time
+  - A stochastic policy defines a probability distribution over actions
+  - Stochastic policies are often used in exploration-exploitation trade-offs and in policy gradient methods.
