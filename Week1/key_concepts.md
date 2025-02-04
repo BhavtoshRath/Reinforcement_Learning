@@ -32,7 +32,7 @@ P(A_t = a | S_t = s)
 #### Example:
 A robot might randomly explore different paths with some probability to enhance learning.
 
-### 3. Policy-Based vs. Value-Based RL
+### 3. Policy-Based vs. Value-Based RL (Methods to derive optimal policy)
 
 #### a). Policy-Based Methods
 - Directly optimize `π(a | s)` without using a value function.
@@ -58,4 +58,4 @@ Policies play a crucial role in Reinforcement Learning, guiding an agent’s act
 
 ---
 
-
+![Policy](images/policy1.jpg)
