@@ -23,7 +23,7 @@ The objective in RL is to learn an **optimal policy (π)** that maps states to a
 # Interview Qs:
 
 - **What is a Markov Decision Process (MDP), and why is it important in reinforcement learning??**
-  - It is a *mathematical framework* for decision-making in environment with stochastic outcomes.
+  - `It is a *mathematical framework* for decision-making in environment with stochastic outcomes.`
   -  Important concepts: states (S), actions (A), transition probabilities (P), rewards (R), and a discount factor (γ).
   - MDPs are crucial in RL because they provide a structured way to model an agent's interaction with an environment to learn an optimal policy.
 
