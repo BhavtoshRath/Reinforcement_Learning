@@ -40,15 +40,14 @@ These methods **learn a value function** (e.g., `Q(s, a)`) to derive a policy in
 ---
 
 ## **Comparison Table**
-| Feature            | Policy-Based | Value-Based |
-|--------------------|-------------|-------------|
-| Action Space      | Continuous / Large | Discrete |
-| Sample Efficiency | Lower | Higher |
-| Stochastic Policy | ✅ Yes | ❌ No (mostly) |
-| Convergence       | Smoother | More Stable |
+| Feature           | Policy-Based        | Value-Based     |
+|-------------------|---------------------|-----------------|
+| Action Space      | Continuous / Large  | Discrete        |
+| Sample Efficiency | Lower               | Higher          |
+| Stochastic Policy | ✅ Yes               | ❌ No (mostly)   |
+| Convergence       | Smoother            | More Stable     |
+| Variance          | High                | Low             |
 | Example Methods   | PPO, A2C, REINFORCE | Q-learning, DQN |
 
 ---
-
-Would you like a **comparison example** or an **implementation snippet**? 🚀
 
