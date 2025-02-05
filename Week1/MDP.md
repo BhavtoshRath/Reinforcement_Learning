@@ -40,9 +40,9 @@ The objective in RL is to learn an **optimal policy (π)** that maps states to a
 
 A Markov Decision Process (MDP) is defined by the tuple:
 
-\[
+```math
 MDP = (S, A, P, R, \gamma)
-\]
+```
 
 where:
 
