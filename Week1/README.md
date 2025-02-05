@@ -2,8 +2,22 @@
 
 Reinforcement Learning (RL) is a type of machine learning where an **agent** learns to make decisions by interacting with an **environment**. The agent takes **actions** to achieve a goal, and the environment provides **feedback** in the form of **rewards**. The agent's objective is to learn a **policy** (a strategy) that maximizes the cumulative reward over time.
 
+`It is the science of decision making`
+
 ---
 
+## Difference Between Reinforcement Learning (RL) and Classical Machine Learning (ML)
+
+| Feature              | Classic Machine Learning (ML) | Reinforcement Learning (RL) |
+|----------------------|------------------------------|------------------------------|
+| **Learning Paradigm** | Supervised or unsupervised learning from data | Trial-and-error interaction with an environment |
+| **Objective**        | Minimize a loss function (e.g., classification error) | Maximize cumulative rewards over time |
+| **Data Dependence**  | Learns from a fixed dataset | Generates data dynamically by interacting with the environment |
+| **Feedback Type**    | Immediate feedback from labeled data | Delayed feedback via rewards and penalties |
+| **Exploration vs. Exploitation** | No explicit exploration; learns from given data | Must balance exploring new actions vs. exploiting known strategies |
+| **Application Domains** | Image recognition, NLP, fraud detection, etc. | Robotics, game playing (e.g., AlphaGo), self-driving cars, automated trading |
+
+---
 ## Reinforcement Learning Process Diagram
 
 Below is a detailed diagram of the Reinforcement Learning (RL) process:

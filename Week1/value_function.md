@@ -1,6 +1,6 @@
 # 📌 Value Function in Reinforcement Learning (RL)
 
-In **Reinforcement Learning (RL)**, a **Value Function** estimates the expected cumulative reward an agent can obtain from a given state or action. It helps the agent evaluate different states and actions to make optimal decisions.
+In **Reinforcement Learning (RL)**, a **Value Function** `estimates the expected cumulative reward` an agent can obtain from a given state or action. It helps the agent evaluate different states and actions to make optimal decisions.
 
 ## 🔹 Types of Value Functions
 

@@ -9,9 +9,9 @@ This is a structured 3-week plan to learn Reinforcement Learning (RL) with basic
 
 ### Day 1-2: Introduction to RL
 - **Theory:**
-  - What is Reinforcement Learning? (Agent, Environment, State, Action, Reward)
-  - Markov Decision Processes (MDPs)
-  - Key concepts: Policy, Value Function, Q-Learning
+  - ~~What is Reinforcement Learning? (Agent, Environment, State, Action, Reward)~~
+  - ~~Markov Decision Processes (MDPs)~~
+  - ~~Key concepts: Policy, Value Function, Q-Learning~~
 - **Resources:**
   - Read Chapters 1-3 of [Reinforcement Learning: An Introduction by Sutton & Barto](http://incompleteideas.net/book/RLbook2020.pdf).
   - Watch [David Silver's RL Lecture 1](https://www.youtube.com/watch?v=2pWv7GOvuf0).
