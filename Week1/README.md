@@ -4,17 +4,28 @@ Reinforcement Learning (RL) is a type of machine learning where an **agent** lea
 
 `It is the science of decision making`
 
+Reinforcement Learning is based on `reward hypothesis` (all goals can be described by
+the maximization of expected cumulative reward)
+
 ---
 
 ## Difference Between Reinforcement Learning (RL) and Classical Machine Learning (ML)
 
-| Feature              | Classic Machine Learning (ML) | Reinforcement Learning (RL) |
-|----------------------|------------------------------|------------------------------|
-| **Learning Paradigm** | Supervised or unsupervised learning from data | Trial-and-error interaction with an environment |
-| **Objective**        | Minimize a loss function (e.g., classification error) | Maximize cumulative rewards over time |
-| **Data Dependence**  | Learns from a fixed dataset | Generates data dynamically by interacting with the environment |
-| **Feedback Type**    | Immediate feedback from labeled data | Delayed feedback via rewards and penalties |
-| **Exploration vs. Exploitation** | No explicit exploration; learns from given data | Must balance exploring new actions vs. exploiting known strategies |
+RL differs from:
+
+- Supervised Learning, which relies on labeled examples from an external supervisor, making it impractical for interactive environments.
+- Unsupervised Learning, which focuses on uncovering hidden data structures rather than maximizing a reward signal.
+
+
+
+
+| Feature              | Classic Machine Learning (ML) | Reinforcement Learning (RL)                                                  |
+|----------------------|------------------------------|------------------------------------------------------------------------------|
+| **Learning Paradigm** | Supervised or unsupervised learning from data | Trial-and-error interaction with an environment                              |
+| **Objective**        | Minimize a loss function (e.g., classification error) | Maximize cumulative rewards over time                                        |
+| **Data Dependence**  | Learns from a fixed dataset | Generates data (s, r, a) dynamically by interacting with the environment     |
+| **Feedback Type**    | Immediate feedback from labeled data | Delayed feedback via rewards and penalties                                   |
+| **Exploration vs. Exploitation** | No explicit exploration; learns from given data | Must balance exploring new actions vs. exploiting known strategies           |
 | **Application Domains** | Image recognition, NLP, fraud detection, etc. | Robotics, game playing (e.g., AlphaGo), self-driving cars, automated trading |
 
 ---
@@ -38,7 +49,7 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 - The environment can be deterministic (predictable) or stochastic (random).
 
 ### 3. **State (s)**
-- A representation of the current situation or configuration of the environment.
+- A representation of `the current configuration of the environment`.
 - The agent uses the state to decide which action to take.
 - Example: In a game of chess, the state could be the current positions of all pieces on the board.
 
@@ -48,7 +59,7 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 - Example: In a self-driving car, actions could be "accelerate," "brake," or "steer left/right."
 
 ### 5. **Reward (r)**
-- A scalar feedback signal provided by the environment after the agent takes an action.
+- A `scalar feedback signal` provided by the environment after the agent takes an action.
 - The reward indicates how good or bad the action was in the given state.
 - The agent's goal is to maximize the cumulative reward over time.
 - Example: In a game, rewards could be +1 for winning, -1 for losing, and 0 for neutral moves.
