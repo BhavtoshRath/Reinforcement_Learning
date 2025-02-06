@@ -15,9 +15,6 @@ An MDP consists of the following elements:
 ## Markov Property  
 An MDP follows the **Markov Property**, which states that the future state depends **only on the current state and action**, not on past states.  
 
-## Goal in Reinforcement Learning  
-The objective in RL is to learn an **optimal policy (π)** that maps states to actions, maximizing the **expected cumulative reward** over time.  
-
 ---
 
 # Interview Qs:

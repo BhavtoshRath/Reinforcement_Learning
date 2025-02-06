@@ -42,6 +42,24 @@ A robot might randomly explore different paths with some probability to enhance 
 - Learn a **value function** (e.g., Q-learning) and derive a policy from it.
 - Example: **Deep Q-Networks (DQN)**.
 
+---
+
+# Policy-Based vs. Value-Based Reinforcement Learning
+
+
+| Feature                                                                                                | Policy-Based                                                                                | Value-Based                                                                      |
+|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Action Space                                                                                           | Continuous / Large/ high-dimensional (ex: Robotics)                                         | Discrete  (ex: Games like Atari)                                                 |
+| Sample Efficiency (how often are the samples used)                                                     | Lower  (on-policy learning)                                                                 | Higher (off-policy learning)                                                     |
+| Policy used                                                                                            | Stochastic (for better exploration)                                                         | Deterministic (good for discrete action spaces)                                  |
+| Convergence                                                                                            | Smoother and slower. <br/>Guaranteed to converge with sufficient exploration and small *lr* | Faster, but can converge to suboptimal policies due to *function approximations* |
+| Variance (fluctuation in outcomes due to randomness is sampling, exploration and environment dynamics) | High (due to sampling noise)                                                                | Low (bootstrapping through q-value estimation stabilizes learning)               |
+| Example Methods                                                                                        | PPO, A2C, REINFORCE                                                                         | Q-learning, DQN                                                                  |
+
+
+---
+
+
 ## Optimal Policy (`π*`)
 The optimal policy maximizes the **expected cumulative reward** over time:
 
