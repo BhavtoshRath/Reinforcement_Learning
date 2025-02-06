@@ -1,16 +1,13 @@
 # The k-Armed Bandit Problem
 
 ## Overview
-The **k-armed bandit problem** is a fundamental problem in **Reinforcement Learning (RL)** that illustrates the trade-off between **exploration and exploitation**. It is named after the analogy of a slot machine (**"one-armed bandit"**) but with **k levers** instead of one.
+The **k-armed bandit problem** is a fundamental problem in **Reinforcement Learning (RL)** that illustrates the trade-off between **exploration and exploitation**.
+It represents a scenario where an agent must repeatedly choose from **K different actions ("arms")** to maximize its total reward over time.
 
 ## Problem Description
 - You are repeatedly faced with **k different actions (choices)**.
 - Each action provides a **numerical reward** drawn from a stationary probability distribution.
 - The goal is to **maximize the expected total reward** over a time period (e.g., 1000 steps).
-
-## Analogies
-- **Slot Machines**: Each action corresponds to pulling a different lever of a slot machine, where each lever has a different (unknown) payout distribution.
-- **Medical Treatments**: A doctor must choose among different experimental treatments, where the reward is the patient's well-being or survival.
 
 ## Action Values
 Each action \( a \) has an **expected reward** (true value):
@@ -29,10 +26,6 @@ Q_t(a) \approx q^*(a)
 - **Exploitation**: Selecting the **greedy action** (highest estimated value) to maximize **immediate** reward.
 - **Exploration**: Selecting **non-greedy actions** to gather information, potentially leading to better rewards in the long run.
 - **The Dilemma**: Short-term gains (exploitation) vs. long-term improvement (exploration).
-
-## Importance of Balancing
-- If you **always exploit**, you might **miss better options** due to inaccurate estimates.
-- If you **explore too much**, you sacrifice immediate rewards.
 - A well-balanced strategy **learns optimal actions over time**.
 
 ## Broader Implications
@@ -41,6 +34,18 @@ Q_t(a) \approx q^*(a)
   - States influence future rewards.
   - Actions impact both immediate and future rewards.
 
-## Conclusion
-The **k-armed bandit problem** highlights the core challenge in RL:  
-Finding an optimal strategy that effectively balances **exploration and exploitation** to maximize long-term rewards.
+##  Common Strategies  
+1. **ε-Greedy Algorithm**:  
+   - With probability **ε**, explore a random arm.  
+   - With probability **1 - ε**, exploit the best-known arm.  
+
+2. **UCB (Upper Confidence Bound)**:  
+   - Select arms optimistically, balancing exploration and exploitation based on confidence intervals.  
+
+3. **Thompson Sampling**:  
+   - Use **Bayesian probability** to sample arms based on their likelihood of being optimal.  
+
+## 🔹 Applications 🚀  
+- **Online Advertising** (choosing the best ad to display).  
+- **Clinical Trials** (testing multiple treatments to find the best).  
+- **Recommendation Systems** (selecting the best content for users).  

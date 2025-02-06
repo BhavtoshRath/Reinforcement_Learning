@@ -44,7 +44,7 @@ A robot might randomly explore different paths with some probability to enhance 
 
 ---
 
-# Policy-Based vs. Value-Based Reinforcement Learning
+## Policy-Based vs. Value-Based
 
 
 | Feature                                                                                                | Policy-Based                                                                                | Value-Based                                                                      |
