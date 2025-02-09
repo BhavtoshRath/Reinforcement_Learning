@@ -5,8 +5,8 @@ The **k-armed bandit problem** is a fundamental problem in **Reinforcement Learn
 It represents a scenario where an agent must repeatedly choose from **K different actions ("arms")** to maximize its total reward over time.
 
 ## Problem Description
-- You are repeatedly faced with **k different actions (choices)**.
-- Each action provides a **numerical reward** drawn from a stationary probability distribution.
+- You are repeatedly faced with **k different actions**.
+- Each action provides a **numerical reward** drawn from a stationary probability distribution (stochastic policy).
 - The goal is to **maximize the expected total reward** over a time period (e.g., 1000 steps).
 
 ## Action Values
@@ -44,6 +44,21 @@ Q_t(a) \approx q^*(a)
 
 3. **Thompson Sampling**:  
    - Use **Bayesian probability** to sample arms based on their likelihood of being optimal.  
+
+---
+
+### K-Armed Bandit Strategies
+
+| Strategy               | Description | Pros | Cons |
+|------------------------|-------------|------|------|
+| **ε-Greedy**          | Chooses the best-known action with probability **1 - ε** and explores randomly with probability **ε**. | Simple, effective, tunable. | Fixed **ε** may not be optimal. |
+| **Optimistic Initial Values** | Initializes action-value estimates optimistically to encourage early exploration. | Encourages exploration without explicit randomness. | Can mislead in non-stationary environments. |
+| **Upper Confidence Bound (UCB)** | Selects actions based on estimated reward and uncertainty using the formula:<br> \( Q(a) + c \sqrt{\frac{\ln t}{N(a)}} \) | Balances exploration and exploitation systematically. | More computationally expensive. |
+| **Thompson Sampling** | Uses Bayesian inference to model reward distributions and selects actions probabilistically. | Efficient exploration and strong empirical performance. | Requires prior knowledge of reward distributions. |
+| **Gradient Bandits** | Uses softmax selection with preference scores and updates them using gradient ascent. | Adaptive, works well with non-stationary rewards. | More complex and requires careful tuning. |
+| **Exp3 (Exponential-weight Algorithm)** | Assigns and updates weights for actions based on observed rewards using an exponential weighting scheme. | Works well in adversarial environments. | Not optimal for stationary settings. |
+
+---
 
 ## 🔹 Applications 🚀  
 - **Online Advertising** (choosing the best ad to display).  
