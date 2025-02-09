@@ -49,14 +49,15 @@ Q_t(a) \approx q^*(a)
 
 ### K-Armed Bandit Strategies
 
-| Strategy               | Description | Pros | Cons |
-|------------------------|-------------|------|------|
-| **ε-Greedy**          | Chooses the best-known action with probability **1 - ε** and explores randomly with probability **ε**. | Simple, effective, tunable. | Fixed **ε** may not be optimal. |
-| **Optimistic Initial Values** | Initializes action-value estimates optimistically to encourage early exploration. | Encourages exploration without explicit randomness. | Can mislead in non-stationary environments. |
-| **Upper Confidence Bound (UCB)** | Selects actions based on estimated reward and uncertainty using the formula:<br> \( Q(a) + c \sqrt{\frac{\ln t}{N(a)}} \) | Balances exploration and exploitation systematically. | More computationally expensive. |
-| **Thompson Sampling** | Uses Bayesian inference to model reward distributions and selects actions probabilistically. | Efficient exploration and strong empirical performance. | Requires prior knowledge of reward distributions. |
-| **Gradient Bandits** | Uses softmax selection with preference scores and updates them using gradient ascent. | Adaptive, works well with non-stationary rewards. | More complex and requires careful tuning. |
-| **Exp3 (Exponential-weight Algorithm)** | Assigns and updates weights for actions based on observed rewards using an exponential weighting scheme. | Works well in adversarial environments. | Not optimal for stationary settings. |
+| Strategy               | Description | Pros | Cons | Example Use Case |
+|------------------------|-------------|------|------|------------------|
+| **ε-Greedy**          | Chooses the best-known action with probability **1 - ε** and explores randomly with probability **ε**. | Simple, effective, tunable. | Fixed **ε** may not be optimal. | Online ad selection (choosing the best ad while still testing new ones). |
+| **Optimistic Initial Values** | Initializes action-value estimates optimistically to encourage early exploration. | Encourages exploration without explicit randomness. | Can mislead in non-stationary environments. | A/B testing for new product features with limited data. |
+| **Upper Confidence Bound (UCB)** | Selects actions based on estimated reward and uncertainty using the formula:```math\( Q(a) + c \sqrt{\frac{\ln t}{N(a)}} \)``` | Balances exploration and exploitation systematically. | More computationally expensive. | Recommender systems (e.g., choosing movies to suggest on a streaming platform). |
+| **Thompson Sampling** | Uses Bayesian inference to model reward distributions and selects actions probabilistically. | Efficient exploration and strong empirical performance. | Requires prior knowledge of reward distributions. | Medical trials (selecting the most effective treatment dynamically). |
+| **Gradient Bandits** | Uses softmax selection with preference scores and updates them using gradient ascent. | Adaptive, works well with non-stationary rewards. | More complex and requires careful tuning. | Dynamic pricing (adjusting product prices based on demand). |
+| **Exp3 (Exponential-weight Algorithm)** | Assigns and updates weights for actions based on observed rewards using an exponential weighting scheme. | Works well in adversarial environments. | Not optimal for stationary settings. | Cybersecurity (detecting and adapting to evolving attack patterns). |
+
 
 ---
 
