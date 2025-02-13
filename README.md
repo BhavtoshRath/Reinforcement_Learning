@@ -17,7 +17,7 @@ This is a structured 3-week plan to learn Reinforcement Learning (RL) with basic
   - ~~Watch [David Silver's RL Lecture 1](https://www.youtube.com/watch?v=2pWv7GOvuf0).~~
 - **Coding:**
   - ~~Set up your environment (Python, NumPy, Gymnasium).~~
-  - Explore Gymnasium environments (e.g., `CartPole`, `FrozenLake`).
+  - ~~Explore Gymnasium environments (e.g., `CartPole`, `FrozenLake`).~~
 
 ### Day 3-4: Tabular Methods
 - **Theory:**
