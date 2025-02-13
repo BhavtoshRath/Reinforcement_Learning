@@ -2,13 +2,15 @@
 
 
 
-### 1. Policy
+### 1. Policy [  π(s) = a   ]
 A **policy** defines the behavior of an agent by specifying how it selects actions based on the current state of the environment. 
 Formally, a policy `π` is a mapping from states (`s`) to actions (`a`):
 
 ```math
 \pi(a | s) = P(A_t = a | S_t = s)
 ```
+
+---
 
 ### 2. Types of Policies
 
@@ -31,6 +33,8 @@ P(A_t = a | S_t = s)
 
 #### Example:
 A robot might randomly explore different paths with some probability to enhance learning.
+
+---
 
 ### 3. Policy-Based vs. Value-Based RL (Methods to derive optimal policy)
 

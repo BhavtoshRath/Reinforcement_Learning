@@ -43,17 +43,17 @@ MDP = (S, A, P, R, \gamma)
 
 where:
 
-- \( S \) : Set of states
-- \( A \) : Set of actions
-- \( P(s' | s, a) \) : Transition probability from state \( s \) to \( s' \) given action \( a \)
-- \( R(s, a) \) : Reward function, which returns a scalar reward for taking action \( a \) in state \( s \)
-- \( \gamma \) : Discount factor (\( 0 \leq \gamma \leq 1 \)), determining the importance of future rewards
+- ( S ) : Set of states
+- ( A ) : Set of actions
+- ( P(s' | s, a) ) : Transition probability from state ( s ) to ( s' ) given action ( a )
+- ( R(s, a) ) : Reward function, which returns a scalar reward for taking action ( a ) in state ( s )
+- ( \gamma ) : Discount factor (( 0 \leq \gamma \leq 1 )), determining the importance of future rewards
 
-The objective in RL is to learn a policy \( \pi(a | s) \) that maximizes the **expected cumulative reward**:
+The objective in RL is to learn a policy ( π(a | s) ) that maximizes the **expected cumulative reward**:
 
 ```math
-V^\pi(s) = \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t, a_t) \mid s_0 = s \right]
+V^π(s) = \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t, a_t) \mid s_0 = s \right]
 ```
 
-where \( V^\pi(s) \) is the value function under policy \( \pi \), which represents the expected reward starting from state \( s \) and following policy \( \pi \).
+where ( V^π(s) ) is the value function under policy ( π ), which represents the expected reward starting from state ( s ) and following policy ( π ).
 

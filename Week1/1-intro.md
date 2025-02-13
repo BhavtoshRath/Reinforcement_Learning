@@ -19,14 +19,14 @@ RL differs from:
 
 
 
-| Feature              | Classic Machine Learning (ML) | Reinforcement Learning (RL)                                                  |
-|----------------------|------------------------------|------------------------------------------------------------------------------|
-| **Learning Paradigm** | Supervised or unsupervised learning from data | Trial-and-error interaction with an environment                              |
-| **Objective**        | Minimize a loss function (e.g., classification error) | Maximize cumulative rewards over time                                        |
-| **Data Dependence**  | Learns from a fixed dataset | Generates data (s, r, a) dynamically by interacting with the environment     |
-| **Feedback Type**    | Immediate feedback from labeled data | Delayed feedback via rewards and penalties                                   |
+| Feature                          | Classic Machine Learning (ML) | Reinforcement Learning (RL)                                                  |
+|----------------------------------|------------------------------|------------------------------------------------------------------------------|
+| **Learning Paradigm**            | Supervised or unsupervised learning from data | Trial-and-error interaction with an environment                              |
+| ***Objective**                   | Minimize a loss function (e.g., classification error) | Maximize cumulative rewards over time                                        |
+| ***Data Dependence**             | Learns from a fixed dataset | Generates data (s, r, a) dynamically by interacting with the environment     |
+| **Feedback Type**                | Immediate feedback from labeled data | Delayed feedback via rewards and penalties                                   |
 | **Exploration vs. Exploitation** | No explicit exploration; learns from given data | Must balance exploring new actions vs. exploiting known strategies           |
-| **Application Domains** | Image recognition, NLP, fraud detection, etc. | Robotics, game playing (e.g., AlphaGo), self-driving cars, automated trading |
+| **Application Domains**          | Image recognition, NLP, fraud detection, etc. | Robotics, game playing (e.g., AlphaGo), self-driving cars, automated trading |
 
 ---
 ## Reinforcement Learning Process Diagram
@@ -84,6 +84,8 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 - **Q-Function (Q):** Estimates the expected cumulative reward for taking a specific action in a specific state.
 - **Exploration vs. Exploitation:** The agent must balance exploring new actions to discover their effects and exploiting known actions that yield high rewards.
 
+-- Both `policy` and `environment` can be deterministic or stochastic.
+
 ---
 
 ## Example: RL in a Game
@@ -92,14 +94,5 @@ Below is a detailed diagram of the Reinforcement Learning (RL) process:
 - **State:** The current configuration of the game (e.g., positions of pieces, level layout).
 - **Action:** A move or decision (e.g., moving a pawn, turning left).
 - **Reward:** Points scored or penalties incurred (e.g., +10 for eating a dot, -100 for losing a life).
-
----
-
-## Applications of Reinforcement Learning
-- Game playing (e.g., AlphaGo, Dota 2).
-- Robotics (e.g., autonomous navigation, manipulation).
-- Recommendation systems.
-- Self-driving cars.
-- Healthcare (e.g., personalized treatment plans).
 
 ---
