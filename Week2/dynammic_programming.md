@@ -1,9 +1,16 @@
 # Dynamic Programming in Reinforcement Learning
 
 ## Overview
-Dynamic Programming (DP) is a set of algorithms used to solve Markov Decision Processes (MDPs) when the environment's transition dynamics are known. It relies on recursive Bellman equations to compute optimal policies.
+- Dynamic Programming (DP) is a set of algorithms used to solve Markov Decision Processes (Environments are MDP) when the environment's transition dynamics are known. 
+- It relies on recursive Bellman equations to compute optimal policies.
+- DP methods assume a finite MDP where states, actions, and rewards are discrete.
+
+GOAL: Optimize policy to maximize future reward.
 
 ## Key Concepts
+
+
+Policy Evaluation, also known as the Prediction Problem, aims to compute the state-value function  for a given policy .
 
 ### 1. Bellman Equations in DP
 Bellman equations form the foundation of DP methods by describing the relationship between the value of a state and the values of its successor states. They provide a recursive way to compute optimal value functions and policies.
