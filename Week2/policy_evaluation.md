@@ -25,3 +25,21 @@ v_{k+1}(s) = \sum_{a} π(a|s) \sum_{s', r} p(s', r | s, a) \left[ r + \gamma v_k
 ## Conclusion
 Policy Evaluation is a fundamental step in **Dynamic Programming** that helps determine the value of states under a given policy. It serves as a building block for **policy improvement** and **policy iteration** in reinforcement learning.
 
+
+
+---
+
+Policy Iteration
+
+## Overview
+Policy Iteration is an algorithm that alternates between **policy evaluation** and **policy improvement** 
+to determine the optimal policy in a Markov Decision Process (MDP).
+
+## Policy Iteration Process
+1. **Policy Evaluation**: Compute the state-value function (v_{π}(s)) for a given policy ( π ).
+2. **Policy Improvement**: Update the policy by choosing actions that maximize the expected return:
+   ```math
+   π'(s) = \arg\max_a q_{π}(s, a)
+   ```
+3. Repeat these steps until the policy **converges**, meaning further improvements are not possible.
+
